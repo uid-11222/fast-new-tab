@@ -4,7 +4,8 @@
 
 [![NPM](https://nodei.co/npm/fast-new-tab.png)](https://nodei.co/npm/fast-new-tab/)
 
-**fast-new-tab** is a simple Chrome extension: fast new tab page without deep scripts and requests, and with all internal Chrome links.
+**fast-new-tab** is a simple Chrome extension: fast new tab page without deep scripts and requests, and with all internal Chrome links.  
+**fast-new-tab** replace default Chrome newtab page to static clear page with basic chrome://* links.
 
 ## Usage ##
 ```bash
@@ -21,6 +22,12 @@ Preview new tab page:
 $ npm install
 $ npm test
 ```
+
+If you need repack **fast-new-tab**.crx after "npm install", remove node_modules before:
+```bash
+$ rm -v -I -r ./node_modules/
+```
+It's not necessary, but it just reduce the size of the package (a little).
 
 ## License ##
 [MIT](LICENSE)
