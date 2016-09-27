@@ -1,13 +1,13 @@
 {
   "name": "Fast New Tab",
   "short_name": "FNT!",
-  "version": "0.3.0",
+  "version": "0.4.1",
   "manifest_version": 2,
   "chrome_url_overrides": {
     "newtab": "newtab.html"
   },
   "minimum_chrome_version": "13",
-  "description": "Fast new tab without scripts and requests.",
+  "description": "Fast new tab without deep scripts and requests.",
   "icons": {
     "38": "icon38.png"
   },

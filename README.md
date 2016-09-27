@@ -4,9 +4,16 @@
 
 [![NPM](https://nodei.co/npm/fast-new-tab.png)](https://nodei.co/npm/fast-new-tab/)
 
-**fast-new-tab** is a Chrome extension: fast new tab without scripts and requests.
+**fast-new-tab** is a Chrome extension: fast new tab without deep scripts and requests.
 
 ## Usage ##
+```bash
+$ npm install fast-new-tab
+$ chromium-browser --pack-extension=fast-new-tab --pack-extension-key=fast-new-tab.pem
+```
+It's create **fast-new-tab.crx** (extension package) and **fast-new-tab.peb** (extension private key).  
+Then drop fast-new-tab.crx on page chrome://extensions and confirm installing package.  
+Instruction on developer.chrome.com: https://developer.chrome.com/extensions/packaging .
 
 ## License ##
 [MIT](LICENSE)
