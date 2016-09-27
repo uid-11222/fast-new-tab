@@ -4,10 +4,9 @@
 
 [![NPM](https://nodei.co/npm/fast-new-tab.png)](https://nodei.co/npm/fast-new-tab/)
 
-**fast-new-tab** get npm download stats for chosen packages and save it to JSON files.
+**fast-new-tab** is a Chrome extension: fast new tab without scripts and requests.
 
 ## Usage ##
-You need a node version >=6.0.0.  
 
 ## License ##
 [MIT](LICENSE)

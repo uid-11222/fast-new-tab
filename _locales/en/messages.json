@@ -1,0 +1,10 @@
+{
+  "application_title": {
+    "message": "Fast New Tab",
+    "description": "Fast new tab without scripts and requests."
+  },
+  "application_description": {
+    "message": "With this extension, new tabs display a static page with some chrome:// links.",
+    "description": "For those who prefer plain over noisy, simple over complex."
+  }
+}
