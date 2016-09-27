@@ -1,10 +1,10 @@
 {
   "name": "fast-new-tab",
-  "version": "0.4.5",
+  "version": "0.4.7",
   "description": "Chrome extension: fast new tab without deep scripts and requests.",
   "main": "newtab.html",
   "scripts": {
-    "test": "./node_modules/opener/opener.js ./newtab.html"
+    "test": "./node_modules/opener/opener.js ./src/newtab.html"
   },
   "keywords": [
     "fast",
