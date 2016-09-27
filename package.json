@@ -1,0 +1,31 @@
+{
+  "name": "fast-new-tab",
+  "version": "0.1.0",
+  "description": "Chrome extension: fast new tab without scripts and requests.",
+  "main": "newtab.html",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha ./test/test.js"
+  },
+  "keywords": [
+    "fast",
+    "new",
+    "tab",
+    "newtab",
+    "chrome",
+    "extension"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "opener": "^1.4.2"
+  },
+  "author": "uid-11222",
+  "bugs": {
+    "url": "https://github.com/uid-11222/fast-new-tab/issues"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/uid-11222/fast-new-tab",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/uid-11222/fast-new-tab"
+  }
+}

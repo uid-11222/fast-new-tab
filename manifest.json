@@ -1,0 +1,19 @@
+{
+   "name": "fast-new-tab",
+   "version": "0.1.0",
+   "manifest_version": 2,
+   "chrome_url_overrides": {
+      "newtab": "newtab.html"
+   },
+   "description": "Fast new tab without scripts and requests.",
+   "icons": {
+      "38": "icon38.png"
+   },
+   "browser_action": {
+      "default_icon": {
+         "38": "icon38.png"
+      },
+      "default_title": "Fast new tab",
+   },
+   "default_locale": "en"
+}
