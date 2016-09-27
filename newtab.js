@@ -15,7 +15,14 @@ for (var i = 0; i < links.length; i++) {
       event.preventDefault();
       event.stopPropagation();
 
-      chrome.tabs.create( { active: true, url: location } );
+      chrome.tabs.getCurrent(function(tab) {
+
+        if (tab) chrome.tabs.remove(tab.id);
+
+      });
+
+      chrome.tabs.create( { url: location } );
+
     });
 
   })();
