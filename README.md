@@ -4,7 +4,7 @@
 
 [![NPM](https://nodei.co/npm/fast-new-tab.png)](https://nodei.co/npm/fast-new-tab/)
 
-**fast-new-tab** is a simplest Chrome extension: fast new tab page without deep scripts and requests.
+**fast-new-tab** is a simple Chrome extension: fast new tab page without deep scripts and requests, and with all internal Chrome links.
 
 ## Usage ##
 ```bash

@@ -1,6 +1,6 @@
 {
   "name": "fast-new-tab",
-  "version": "0.8.0",
+  "version": "1.0.0",
   "description": "Chrome extension: fast new tab without deep scripts and requests.",
   "main": "newtab.html",
   "scripts": {

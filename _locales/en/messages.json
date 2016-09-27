@@ -4,7 +4,7 @@
     "description": "Fast new tab without deep scripts and requests."
   },
   "application_description": {
-    "message": "With this extension, new tabs display a static page with some chrome:// links.",
-    "description": "For those who prefer plain over noisy, simple over complex."
+    "message": "With this extension, new tabs display a static page with main internal chrome:// links.",
+    "description": "For those who prefer minimalistic light interfaces."
   }
 }
