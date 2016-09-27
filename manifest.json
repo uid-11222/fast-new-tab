@@ -1,10 +1,12 @@
 {
   "name": "Fast New Tab",
-  "version": "0.1.0",
+  "short_name": "FNT!",
+  "version": "0.2.0",
   "manifest_version": 2,
   "chrome_url_overrides": {
     "newtab": "newtab.html"
   },
+  "minimum_chrome_version": "21",
   "description": "Fast new tab without scripts and requests.",
   "icons": {
     "38": "icon38.png"
@@ -13,7 +15,8 @@
     "default_icon": {
       "38": "icon38.png"
     },
-    "default_title": "Fast new tab"
+    "default_title": "Fast New Tab"
   },
+  "update_url": "https://clients2.google.com/service/update2/crx",
   "default_locale": "en"
 }
