@@ -12,7 +12,7 @@ $ npm install fast-new-tab
 $ chromium-browser --pack-extension=fast-new-tab --pack-extension-key=fast-new-tab.pem
 ```
 It's create **fast-new-tab**.crx (extension package) and **fast-new-tab**.peb (extension private key).  
-Then drop fast-new-tab.crx on page chrome://extensions and confirm installing package.  
+Then drop **fast-new-tab**.crx on page [chrome://extensions](chrome://extensions) and confirm installing package.  
 Instruction on developer.chrome.com: [packaging](https://developer.chrome.com/extensions/packaging).
 
 ## Test ##
