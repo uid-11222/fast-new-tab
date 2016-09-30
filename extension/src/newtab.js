@@ -5,8 +5,6 @@
  * on New Tab page.
  */
 
-(function () {
-
 /**
  * Make onClicker callback, that opens new tab.
  * @param  {string=} href Link for new tab (default -- New Tab Page).
@@ -38,19 +36,22 @@ function makeOnClicker(href, closeOld) {
   };
 }
 
-/**
- * If url === undefined, chrome.tabs.create() open New Tab Page.
- */
-chrome.browserAction.onClicked.addListener(makeOnClicker());
+if (document && document.body && document.body.firstChild &&
+    document.body.firstChild.className === "toolbar") {
+  (function () {
 
-var links = document.getElementsByTagName("A"),
-    link;
+    var links = document.getElementsByTagName("A"),
+        link;
 
-for (var i = 0; i < links.length; i++) {
+    for (var i = 0; i < links.length; i++) {
+      link = links[i];
+      link.addEventListener("click", makeOnClicker(link.href, true));
+    }
 
-  link = links[i];
-  link.addEventListener("click", makeOnClicker(link.href, true));
-
+  })();
+} else {
+  /**
+   * If url === undefined, chrome.tabs.create() open New Tab Page.
+   */
+  chrome.browserAction.onClicked.addListener(makeOnClicker());
 }
-
-})();
