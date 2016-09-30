@@ -16,10 +16,10 @@ Then drop **fast-new-tab**.crx on page [chrome://extensions](chrome://extensions
 
 Or you can packaging your own version:
 ```bash
-$ chromium-browser --pack-extension=extension --pack-extension-key=extension.pem
+$ chromium-browser --pack-extension=extension
 ```
 It's create extension.crx (extension package) and extension.peb (extension private key).  
-Instruction on developer.chrome.com: [packaging](https://developer.chrome.com/extensions/packaging).
+Instruction from developer.chrome.com: [packaging](https://developer.chrome.com/extensions/packaging).
 
 ## Test ##
 Preview new tab page:
