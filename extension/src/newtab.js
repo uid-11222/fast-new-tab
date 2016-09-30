@@ -13,10 +13,8 @@
  */
 function makeOnClicker(href, closeOld) {
 
-  var details = { url: href };
-
   return function onClicker(event) {
-    if (event.preventDefault) event.preventDefault();
+    if (event.preventDefault ) event.preventDefault ();
     if (event.stopPropagation) event.stopPropagation();
 
     if (closeOld) chrome.tabs.getCurrent(function (tab) {
@@ -25,19 +23,16 @@ function makeOnClicker(href, closeOld) {
 
     });
 
-    if (closeOld && typeof href === 'string') {
-      chrome.tabs.create(details, function () {
-        chrome.history.addUrl(details);
-      });
-    } else {
-      chrome.tabs.create(details);
-    }
+    chrome.tabs.create({ url: href });
     
   };
 }
 
-if (document && document.body && document.body.firstChild &&
-    document.body.firstChild.className === "toolbar") {
+/**
+ * If document.head.firstChild not null, then we on newtab page.
+ * Else -- we on background event (browserAction.onClicked) page.
+ */
+if (document.head.firstChild) {
   (function () {
 
     var links = document.getElementsByTagName("A"),

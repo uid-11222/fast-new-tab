@@ -4,16 +4,21 @@
 
 [![NPM](https://nodei.co/npm/fast-new-tab.png)](https://nodei.co/npm/fast-new-tab/)
 
-**fast-new-tab** is a simple Chrome extension: fast new tab page without deep scripts and requests, and with all internal Chrome links.  
-**fast-new-tab** replace default Chrome newtab page to static clear page with basic chrome://* links.
+**fast-new-tab** is a simple Chrome extension: fast new tab page without deep scripts and requests, without any permissions, and with all internal Chrome links.  
+**fast-new-tab** replace default Chrome new tab page to static clear page with basic chrome://* links.
 
 ## Usage ##
 ```bash
 $ npm install fast-new-tab
-$ chromium-browser --pack-extension=fast-new-tab --pack-extension-key=fast-new-tab.pem
+$ cd fast-new-tab
 ```
-It's create **fast-new-tab**.crx (extension package) and **fast-new-tab**.peb (extension private key).  
-Then drop **fast-new-tab**.crx on page [chrome://extensions](chrome://extensions) and confirm installing package.  
+Then drop **fast-new-tab**.crx on page [chrome://extensions](chrome://extensions) and confirm installing package.
+
+Or you can packaging your own version:
+```bash
+$ chromium-browser --pack-extension=extension --pack-extension-key=extension.pem
+```
+It's create extension.crx (extension package) and extension.peb (extension private key).  
 Instruction on developer.chrome.com: [packaging](https://developer.chrome.com/extensions/packaging).
 
 ## Test ##
@@ -22,12 +27,6 @@ Preview new tab page:
 $ npm install
 $ npm test
 ```
-
-If you need repack **fast-new-tab**.crx after "npm install", remove node_modules before:
-```bash
-$ rm -v -I -r ./node_modules/
-```
-It's not necessary, but it just reduce the size of the package (a little).
 
 ## License ##
 [MIT](LICENSE)
