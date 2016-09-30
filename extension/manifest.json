@@ -1,7 +1,7 @@
 {
   "name": "Fast New Tab",
   "short_name": "FNT!",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "manifest_version": 2,
   "chrome_url_overrides": {
     "newtab": "./src/newtab.html"
@@ -13,10 +13,18 @@
   },
   "browser_action": {
     "default_icon": {
+      "16": "./icons/icon128.png",
+      "48": "./icons/icon128.png",
       "128": "./icons/icon128.png"
     },
     "default_title": "Fast New Tab"
   },
   "update_url": "https://clients2.google.com/service/update2/crx",
-  "default_locale": "en"
+  "default_locale": "en",
+  "homepage_url": "https://github.com/uid-11222/fast-new-tab",
+  "offline_enabled": true,
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  }
 }

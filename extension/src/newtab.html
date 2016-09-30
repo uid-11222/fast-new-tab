@@ -1,0 +1,109 @@
+<!doctype html><title>&#65279;</title>
+<style>
+
+body {
+	text-align: center;
+	padding: 0px;
+	margin: 0px;
+}
+
+a {
+	font-family: DejaVu Sans, Arial, sans-serif;
+	font-size: 16px;
+	cursor: default;
+	padding: 2px 10px;
+	text-decoration: none;
+	color: rgb(48, 57, 66);
+	white-space: nowrap;
+	line-height: 20px;
+	box-sizing: border-box;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	display: inline-block;
+	-webkit-user-select: none;
+	-webkit-transition: background 0.5s ease;
+}
+
+a:hover {
+	background: #DDD;
+}
+
+div.toolbar {
+	background-color: #EEE;
+	border-bottom: 1px solid rgb(74%, 74%, 74%);
+	padding: 6px 4px 4px;
+}
+
+span.label {
+	background-size: 16px;
+	-webkit-padding-start: 20px;
+	background: 0 50% no-repeat;
+	box-sizing: border-box;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: pre;
+	line-height: 20px;
+	-webkit-transition: all 150ms;
+	-webkit-user-select: none;
+}
+
+span.apps {
+	background-image: -webkit-image-set(url("../icons/apps16.png") 1x, url("../icons/apps32.png") 2x);
+}
+
+span.extensions {
+	background-image: -webkit-image-set(url("../icons/extensions16.png") 1x, url("../icons/extensions32.png") 2x);
+}
+
+span.settings {
+	background-image: -webkit-image-set(url("../icons/settings16.png") 1x, url("../icons/settings32.png") 2x);
+}
+
+span.bookmarks {
+	background-image: -webkit-image-set(url("../icons/bookmarks16.png") 1x, url("../icons/bookmarks32.png") 2x);
+}
+
+span.history {
+	background-image: -webkit-image-set(url("../icons/history16.png") 1x, url("../icons/history32.png") 2x);
+}
+
+span.downloads {
+	background-image: -webkit-image-set(url("../icons/downloads16.png") 1x, url("../icons/downloads32.png") 2x);
+}
+
+</style>
+
+<div class="toolbar">
+	<a href="chrome://apps" title="chrome://apps">
+		<span class="label apps" style="">Apps</span>
+	</a>
+	<a href="chrome://extensions" title="chrome://extensions">
+		<span class="label extensions" style="">Extensions</span>
+	</a>
+	<a href="chrome://plugins" title="chrome://plugins">
+		<span class="label extensions">Plugins</span>
+	</a>
+	<a href="chrome://history" title="chrome://history">
+		<span class="label history">History</span>
+	</a>
+	<a href="chrome://downloads" title="chrome://downloads">
+		<span class="label downloads">Downloads</span>
+	</a>
+	<a href="chrome://bookmarks/#1" title="chrome://bookmarks/#1">
+		<span class="label bookmarks">Bookmarks</span>
+	</a>
+	<a href="chrome://chrome-urls" title="chrome://chrome-urls">
+		<span class="label settings">Urls</span>
+	</a>
+	<a href="chrome://settings" title="chrome://settings">
+		<span class="label settings">Settings</span>
+	</a>
+	<a href="chrome://version" title="chrome://version">
+		<span class="label settings">Version</span>
+	</a>
+	<a href="chrome://chrome" title="chrome://chrome">
+		<span class="label settings">About</span>
+	</a>
+</div>
+
+<script src="newtab.js"></script>
